@@ -1,0 +1,38 @@
+Lecture-1 : Objects And Classes
+Errors and Bugs.
+* Step 1: 
+Introduction to OOP's : Procedural Programming vs Object Oriented Programming
+Procedural Programming : Derived from Structural Programming.
+                       : A program is divided into small parts called Functions.
+                       : Procedural programming follows top down approach.
+                       : Function is more important than data.
+                       : Based on unreal world.
+                       : Hiding data was not possible, so it is less secure.
+                       : Adding new data and function is not easy.
+                       : Example: C, Pascal, Basics, etc,.
+OOP's : OOP's is based on real world.
+      : Program is divided into small parts called Objects.
+      : Object oriented programming follows bottom up approach.
+      : Data is given more importance than functions.
+      : Data hiding is possible, so that it was more secure.
+      : Adding new data and function is much easier.
+      : Example: C++, Java, Python, etc,.
+
+*Step 2: 
+What is Object? : Anything having property and Behaviour.
+Example (Laptop) : What Laptops have are the properties. Eg: Ram, Internal Storage, etc,.
+                 : What Laptop can do is the Behaviour. Eg: Connecting to the internet, Sharing files via wifi, etc,.
+Objects are : Physical. (Car, Pen, Laptop,etc,.)
+            : Logical. (Bank Account, etc,.)
+
+*Step 3: 
+What is class? : Class is a group of objects which have common properties.
+Classes can contains : Fields
+                     : Methods 
+                     : Constructors - To initialise variables.
+                     : Nested class and Interface
+Creation of Objects of class : Known as instance of a class.
+                             : Can be created using a NEW keyword.
+                             : Objects share the attributes and the behaviour of the class.
+                             : Values of those atributes may be unique for each object.
+                             : A class may have any number of instances.
