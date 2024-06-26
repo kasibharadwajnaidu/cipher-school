@@ -1,6 +1,8 @@
 Lecture-2:GIT and GITHUB
 
-GIT
+GIT is an open source distributed version control system .it is designed to handle minor to major project with high speed and efficency.
+GIT was created in 2005 by Linus Torvalds to devlop linux.
+Example 
 whats app 
 VL.0-Basic chat
 V1.1-Emojis-100 lines
@@ -12,3 +14,15 @@ V2.0-voice calling
 V3.0-video calling 
 VCS-version control system
 feedback-Emojis are not working properly
+code 
+git init 
+git status 
+git add "folder name as Day-1,June 1"
+git status 
+git commit -m "folder name as Intro-Day-1,June-1"
+git log
+we will get a message of Intro Day-1,June 01
+create a new regripotry and Create it and copy the code
+git remote  add origin  copy the code 
+git remote -v to see 
+git push origin master
