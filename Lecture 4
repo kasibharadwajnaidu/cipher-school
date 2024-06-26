@@ -1,0 +1,61 @@
+Lecture 4- Features Of Java
+there are 10 features ofr java 
+1.simple
+2.object oriented
+3.platform independent
+4.architecture netural
+5.portal
+6.robust
+7.secure
+8.high performance
+9.mutli threaded
+10.distrubted
+
+1.simple 
+java is very easy to learn as its syntx is very simple.
+It's Syntx is based on C++.(easier for people already familiar with it)
+No complicated features like pointers,operator,overloading etc
+Automatic Garbage collection to remove unreferenced objects 
+
+2.object oriented
+java is object oriented programming language.
+object oriented programming is better than procedural programming because it provides great flexibility,modularity,clarity,and reusability.
+OOp's is more secure as it provides data hiding features.
+
+3.platform independent
+"Write once run anywhere"feature of java makes it platform independent.it allows a java program to run on any operating system like windows,linux,mac or solaris.
+an additional layers (class file)is added in java to achieve platform independence.
+JVM-Java Virtual Machine
+
+4.architecture netural
+java has an essiental feature that allows the applications to run easily on different machines with different hardware architecture.
+in java it occupies 4 bytes of memory for both 32 and 64-bitar chitecture.
+
+5.portable
+the platofrm indepence and architecture netural features of java makes it portable 
+Portable because it facilitates to carry the java bytecode to any platform.
+
+6.robust
+robust means strong/reliable.
+java has eliminated certain types of error prone programming constructs that are found in other languages.
+java has a strong memory allocation and garbage collection mechanism.
+
+
+7.secure
+java is best known for its security.
+java does not use pointers explicitly.
+java programs run under an area known as the Sand Box.
+the byte code verifier checks the classes after loading.
+
+8.High performance
+java is faster than other traditional interpreted progtamminglanguages because java bytecode is "close" to native code.
+
+
+9.Muti-threaded
+Mutltithreading means a single program having different independent taska to be performed independently at the same time.
+multithreading is particulalry useful in server applications, a server can serve multiple clents at the same time.
+in java, threads can be created in two ways: by extending Threads class abd by implementing Runnable interface.
+
+10.distrubted
+in distrubted computing, several computers work together on a network.
+this features of java makes us able to acces files by calling the methods from any machine on the internet.
