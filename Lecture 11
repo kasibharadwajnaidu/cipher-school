@@ -1,0 +1,41 @@
+Lecture11- Static Variables And Abstract Class
+
+static methods 
+static methods are also called class methods
+static methods belong to class it can be used with class name directly,can also be acceseed using instance referenves.
+
+what is Abstraction?
+Data abstraction is the process of hiding certain details and showing only essential information th the user.
+
+
+abstract methods 
+methods declared but not implemented are called abstract method.
+final and static are not declared as abstract.
+
+package abstraction;
+abstract class Car
+{
+int maxSpeed;
+abstract void acclerate();
+abstract void brake();
+}
+class BMW extends Car{
+void acclerate(){
+System.out.println("BMW is accelerting");
+}
+}
+class BMW2 extends BMW{
+void breake(){
+System.out.println("BMW is applying Brakes");
+}
+}
+public class AbstractStudy {
+public static void main(String[] args){
+Car c = new Car(); // Cannot instantiate an abstract class
+BMW beemer = new BMW();
+beemer.acclerate();
+}
+}
+
+abstract class
+a class containing abstract methods is called abstract class.
