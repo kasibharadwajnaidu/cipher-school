@@ -1,0 +1,19 @@
+Lecture6- Instantiation
+Instantiation process
+ Student s new Student();
+main things
+1.Creating a variable to store the reference of the object.
+2.create an object using new keyword.
+3.assignment reference of the created object to the variable.
+
+
+Heap and Stack Memory
+Memory stack
+main()
+a=10;
+
+Garbage collection
+1 Student SL= new student();         2 Student SL=new Student()
+3 s1=s2;
+Eg:
+1 Student s1= new syudent();        2 s1=null
