@@ -1,0 +1,54 @@
+Lecture9- Implementation Of Objects And Inheritance
+
+package coreJava;
+public class Students {
+int rollNo; //Camel Casing 
+String name;
+public static void main(String[] args){
+Students s1 = new Students();
+Students s2 = new Students();
+Students s3 = new Students();
+s1.name = "Ram";
+s1.rollNo = 1;
+s2.name = "Sham";
+s2.rollNo = 2;
+s3.name = "Ram";
+s3.rollNo = 3;
+}
+}
+
+
+Inheritance 
+1.using inheritance,we can create new classes from already existing classes.
+2.Existing classes from which new classes are derived are called base/parent/super classes.
+3.new classes are called dervied/child/sub classes
+
+package inheritance;
+class Shape{ //Parent class, base class, super class
+double pi=3.14;
+double getSquare(int r)
+{
+return r*r;
+}
+}
+class Circle extends Shape{ //child class, derived class, sub class
+void area(int r){
+System.out.println(pi*getSquare(r));
+}
+}
+public class InheritanceStudy {
+public static void main(String[] args){
+Circle c = new Circle();
+c.area(5);
+}
+}
+
+there are 4 types of inheritance 
+1.single level inheritance
+2.multi-level inheritance
+3.hierarchical inheritance
+4.hybrid inheritance
+5.multiple inheritance - not allowed in java through java
+
+Diamond Problem
+
