@@ -1,0 +1,9 @@
+Lecture14- Arrays Pt 1
+DS - ways to store organize data
+ index      0   1  2  3    4  
+array - 1  2   3   4   5  - array of integers   
+
+int arr[]= new int[size]; 
+
+array is an object in java 
+array is an indexed  collection of finite numer of homogenous data elements.
