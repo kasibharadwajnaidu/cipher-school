@@ -1,0 +1,89 @@
+Lecture13- Access Modifiers
+code:
+package accessModifiers2;
+import accessModifiers1.A;
+
+public class C extends A{
+public static void main(string[] args){
+A obj = new A();
+C childObj = new C();
+//System.out.println(obj.x);
+//System.out.println(obj.y);
+System.out.println(obj.z);
+System.out.println(ChildObj.w);
+}
+}
+
+package accessModifiers1;
+public class A{
+int x = 10; // default or package private
+private int y = 15;
+public int z = 20;
+protected int w = 25;
+
+public static void main(String[] args){
+A obj = new A();
+System.out.println(obj.x);
+System.out.println(obj.y);
+System.out.println(obj.z);
+}
+}
+
+
+package accessModifiers1;
+public class B{
+public static void main(string[] args){
+A obj = new A();
+System.out.println(obj.x);
+//System.out.println(obj.y);
+System.out.println(obj.z);
+}
+}
+
+package accessModifiers2;
+import accessModifiers1.A'
+public class D {
+public static void main(string[] args){
+A obj = new A();
+//System.out.println(obj.x);
+//System.out.println(obj.y);
+System.out.println(obj.z);
+//System.out.println(obj.w);
+}
+}
+
+package encapsukation;
+class Demo{
+Private int a = 5;
+Private int b = 10;
+Private int c  = 15;
+Private int d= 20;
+public int getA(){
+System.out.println("Value of A read");
+return this.a;
+}
+public int getB(){
+System.out.println("Value of B read");
+return this.b;
+}
+public void setA(int a){
+if(a>100){
+this.a=a;
+System.out.println("Value of A changed to: "+a);
+}
+else{
+System.out.println("Cannot set - value outside limits");
+}
+}
+public void setB(int b){
+this.b=b;
+}
+}
+public class EncapStudy{
+public static void main(String[] args){
+Demo d = new Demo();
+System.out.println("d.getA());
+d.setA(100);
+System.out.println(d.getA());
+}
+}
