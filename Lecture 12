@@ -1,0 +1,62 @@
+Lecture12- Abstract Class And Interface
+Interface 
+An interface is something like a blueprint of a class 
+interfaces can have only abstract methods
+they are used to achueve absoulte abstraction and multiple inheritance in java
+variables declared inside interfaces are public,static & final by default .even if we don't use these keywords explicitly.
+
+code:
+package abstraction;
+
+interface Shape{
+double pi = 3.14;//public, static, final
+double getSquare(double r);//public and abstract
+}
+class Circle implements Shape{
+public double getSquare(double r){
+return r*r;
+}
+void fun(){
+System.out.println("Hey, I implemented an interface named Shape");
+}
+}
+public class InterfaceStudy {
+public static void main(String[] args){
+}
+}
+
+code: 
+package abstraction;
+interface M{
+int x = 10;
+void fun();
+}
+interface N{
+int x = 20;
+void fun();
+}
+class C implements M,N{
+public void fun(){
+System.out.println("Hello, I'm function in C");
+System.out.println(M.x);
+System.out.println(N.x);
+System.out.println(M.super.hashCode());
+System.out.println(N.super.hashCode());
+}
+}
+
+interface o  extends M,N{
+void fun();
+}
+
+class O implements o{
+public void fun(){
+System.out.println("Hello, I'm function in O");
+}
+}
+public class MultipleInheritanceStudy{
+public static void main(String[] args){
+C c = new C();
+c.fun();
+}
+}
