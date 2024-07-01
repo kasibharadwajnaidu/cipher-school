@@ -1,0 +1,46 @@
+Lecture19- Time And Space Complexity
+Optimization & Sorting 
+question  check if a NO.is prime or not .
+Ram- Divide from 2 to n-1 and check if remainder!=zero
+{ i=2 to n-1
+if(n%i==0) return false;
+}
+return true;
+No.of steps - n-alpha - n
+
+sham- 2 to root n
+No of steps n - root 
+code:
+package coreJava;
+public class TimeComplexity {
+static boolean isPrimeRam(int n)
+{
+if(n<=1) retrun false;
+if(n==1) retrun true;
+{
+if(n%i == 0) return false;
+}
+return true;
+}
+static boolean isPrimeSham(int n)
+{
+if(n<=1) retrun false;
+if(n==1) retrun true;
+for(int i=2;i<=Math.sqrt(n);i++)
+{
+if(n%i == 0) return false;
+}
+return true;
+}
+public static void main(String[] args({
+int n = 10000;
+long start = Ststem.currentTimeMills();
+System.out.println(isPrimeRam(n));
+long end = System.currentTimeMills();
+System.out.println("Time by Ram's approach: " (end-start));
+start = system.currentTimeMillis();
+System.out.println(isPrimeSham(n));
+end = System.currentTimeMills();
+System.out.println("Time by SHAM's approach: " (end-start));
+}
+}
