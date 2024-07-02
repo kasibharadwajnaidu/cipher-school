@@ -1,1 +1,79 @@
 Lecture21- Sorting
+code:
+class Compute{
+static pair getMinMax(long arr[], long n){
+long min = arr[0];
+int minIndex = 0;
+for(long i=0;i<n;i++){
+if(arr[i]<min){
+min=arr[i];
+minIndex = i;
+}
+}
+long max = arr[0];
+int maxIndex = 0;km  
+for(int i=0;i<n;i++){
+if(arr[i]<max){
+max=arr[i];
+maxIndex = i;
+}
+}
+System.out.println("Min found at: " + minIndex + ". Max found at: " + maxIndex);
+return new pair (min,max);
+code:
+package arrays;
+public class SelectionSort{
+public static void main(String[] args){
+int arr[] = {3,7,10,11,4,1};
+int n=arr.length;
+for(int i=0;i<n=1;i++){
+int miniIndex = i;
+for(int j=i+1;j<n;j++){
+if(arr[j]<arr[minIndex]){
+minIndex = j;
+}
+}
+int temp = arr[i];
+arr[i] = arr[minIndex];
+arr[minIndex] = temp;
+}
+for(int i = 0;i<n ;i++){
+System.out.println(arr[i] + " ");
+}
+System.out.println();
+}
+}
+
+
+Strings
+code:
+package strings;
+public class StringStudy{
+public static void main(String[] args){
+String name = "CipherSchools";
+String name2 = "CipherSchools";
+
+String name3 = new String("CipherSchools");
+String name4 = new String("CipherSchools");
+System.out.println(name==name2);
+System.out.println(name3==name4);
+System.out.println(name==name3);
+System.out.println("******************************************");
+System.out.println("1.CONCENTENATION"):
+String s1 = "Hello";
+s1 = s2 + " Peeps";
+System.out.println(s1);
+System.out.println(s1 + ", How're you doing?");
+System.out.println(s1);
+String s2 = new String("Hello");
+String s3 = new String(" people");
+String s4 = s3.concat(s3);
+System.out.println(s4);
+System.out.println(s3);
+
+
+
+}
+}
+
+
