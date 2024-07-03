@@ -1,0 +1,18 @@
+Lecture26- Sliding Window
+code:
+class Soution{
+static int maximumSumSubarray(int k, ArrayList<Integer> Arr,int N){
+int max = Integer.MIN_VALUE;
+for(int i = 0; i<=N-K; i++){
+int sum = 0;
+for(int j=0;j<K;j++){
+sum = sum + Arr.get(i+j);
+}
+if(sum>max) max = sum;
+}
+retrun max;
+}
+}
+
+int sum = 0;
+for(int i=0;i<K; i++){
