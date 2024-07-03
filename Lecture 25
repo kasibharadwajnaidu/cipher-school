@@ -1,0 +1,58 @@
+Lecture25- Recursion
+Recursion - a function is calling  itself directly or indirectly.
+prob. Write a recursive function to print decending values from n to 1 Sample input: n=5, output: 5 4 3 2 1 
+code:
+package recursion;
+public class REcursionStudy{
+static void printDescending(int n){
+System.out.println(n);
+printDescending(n-1);
+}
+public static void main(String[] args){
+int n=5;
+printDescending(n);
+ fibonaccie Series
+f0=0   f1=1
+0,1,1,2,3,5,8,13,21,34,55,89  
+fib(n) = fib(n-1)+fin(n-2)
+code:
+pacakge recursion;
+public class Fibonacci{
+static int fib(int n){
+if(n<2) return n;
+int a = fib(n-1);
+int b = fib(n-2);
+return a + b;
+}
+public static void main(String[] args){
+int n = 7;
+System.out.println(fib(n));
+}
+}
+Binary Serach
+pre-requirite - sorted Array
+code:
+package recursion;
+public class BinarySearchWithoutRecursion{
+public static void main(String[] args){
+int arr[] = {2,5,8,12,16,23,38,56,72};
+int x = 23;
+int l = 0;
+int  r = arr,length - 1;
+while(l<=r){
+int mid = (r-1).2 + 1;
+int mid = (1+r).2;
+if(add[mid] == x){
+System.out.println("Value found at index: " + mid);
+return;
+}
+else if(x<arr[mid]){
+r = mid-1;
+}
+else{
+l=mid+1;
+}
+}
+System.out.println("Value not found.");
+}
+}
