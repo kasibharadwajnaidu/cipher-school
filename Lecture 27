@@ -1,0 +1,34 @@
+Lecture27- Two Pointer Concept
+10 20 35 50 75 80 - sorted
+check if there exist two numbers with sum - 95 
+l + r - 90
+we want - 95 - ltt - increase
+none -100 - decrease - r--
+sum < requried - l++;
+sum > requried - r--;
+
+code:
+package arrays;
+public  class TwoPointerConcept {
+public static void main(String[] args){
+int arr[]  = {10,20,35,50,75,80};
+int x = 40;
+int l = 0;
+int r = arr.length - 1;
+boolean found = flase;//flag
+while(i<r){
+int sum = arr[i] + arr[r];
+if(sum++x){
+System.out.println("Found " + x + " as sum of values on index: " + l + " and index: " + r);
+return;
+}
+else if(sum(x){
+l++;
+}
+ele{
+r++;
+}
+}
+System.out.println("Sum not found.");
+}
+}
