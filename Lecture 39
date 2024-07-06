@@ -1,0 +1,72 @@
+Lecture39- Stacks
+code:
+int peak()
+{
+arr[top];
+}
+boolean is Empty()
+{
+retrun top==-1;
+}
+void insert(int data)
+{
+top= top+1;
+arr[top]=data;
+}
+int pop()
+{
+int n<arr[top];
+top=top-1;
+return x;
+}
+
+package stacks;
+class MyStack{
+final int size = 10;
+int arr[] = new int[size];
+int top = -1;
+
+int peak()
+{
+if(this.isEMpty())
+{
+System.out.println("Empty Stack! Nothing at top");
+return -1;
+}
+return arr[top];
+}
+boolean isEmpty()
+{
+return top == -1;
+}
+void push(int data)
+{
+if(top>=size-1)
+{
+System.out.println("Stack Overflow! Unable to Push");
+return;
+}
+top = top + 1;
+arr[top] = data;
+}
+int pop()
+{
+int temp = arr[top];
+top--;
+return temp;
+}
+}
+public class ArrayImp{
+public static void main(String[] args){
+MyStack stack = new MyStack();
+System.out.println(stack.peek());
+System.out.println(stack.isEmpty());
+stack.push(1);
+stack.push(2);
+stack.push(3);
+
+System.out.println(stack.isEmpty());
+System.out.println(stack.peek());
+System.out.println(stack.pop());
+}
+}
