@@ -1,0 +1,46 @@
+Lecture38- Remove Loop In Linked List Continued
+code:
+approach-2
+void removeLoop(Node listNode, Node loopNode){
+Node temp = loopNode;
+int count = 0;
+while(loopNode.next!=temp)
+{
+loopNode = loopNode.next;
+size++;
+}
+Node slow = head;
+Node fast = head;
+for(int i=0;i<size;i++)
+{
+fast = fast.next;
+}
+while(slow.next != fast.next){
+slow=slow.next;
+fast=fastnext;
+}
+fast.next=null;
+}
+approach-3
+void detectAndRemoveLoop(Node head){
+if(head==null)return;
+Node slow = head;
+Node fast = head;
+while(fast!=null && fast.next!=null){
+slow=slow.next;
+fast=fast.next.next;
+if(slow==fast)
+{
+break;
+}
+}
+if(slow==fast)
+{
+slow=head;
+while(slow.next != fast.next){
+slow=slow.next;
+fast=fastnext;
+}
+fast.next=null;
+}
+}
