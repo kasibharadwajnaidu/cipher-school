@@ -1,0 +1,5 @@
+Lecture45- Data Structures
+proper Binary Tree: Each node can have either have 2 children or no children 
+Complete Binary Tree: All levels, possibly except the last are completely filled and all nodes are as left as possible.
+perfect Binary tree: if all the levels are completely filled.
+Balanced Binary Tree:Difference between the height of left and right subtree for every node os not more than k (mostly k=1).
