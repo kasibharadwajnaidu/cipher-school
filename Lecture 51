@@ -1,0 +1,38 @@
+Lecture51- Binary Search Tree
+package trees;
+BSTNode(){
+BSTNode insert(Bst Node root, int data)
+{
+if(root ==v null){
+return new BSTNode(data);
+}
+if(data<=root.data)
+{
+root.left= insert(root.left, data);
+}
+else{
+root.right = insert(root.right, data);
+}
+return root;
+}
+int getMin(BSTNode root)
+{
+if(root == null) return -1;
+
+public static voidmain(String[] args){
+BST bst = new BST(15);
+bst.root = bst.insert(bst.root, 10);
+bst.root = bst.insert(bst.root, 20);
+bst.root = bst.insert(bst.root, 8);
+bst.root = bst.insert(bst.root, 12);
+bst.root = bst.insert(bst.root, 17);
+bst.root = bst.insert(bst.root, 25);
+bst.root.left = new BSTNode(10);
+bst.root.right = new BSTNode(20);
+bst.root.left.left = new BStNode(0);
+bst.root.left.right= new BStNode(17);
+bst.root.right.left = new BStNode(17);
+bst.root.right.right = new BStNode(25);
+System.out.println(res);
+}
+}
