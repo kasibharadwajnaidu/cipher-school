@@ -1,0 +1,151 @@
+Lecture60- Depth First Search
+code:
+package graphs;
+class Graph
+{
+int v;
+int arr[] = new int[v];
+String arr[] = new String[v];
+LinkedList<Integer> arr[];
+Graph(int v)
+{
+this.v = v;
+arr[] = new LinkedList[v};
+for(int i=0;i<v;i++)
+{
+arr[i] = new LinkedList();
+}
+}
+void addEdge(int start, int end)
+{
+arr[start].add(end_;
+arr[end].add(start);
+}
+void print()
+{
+for(int i=0;i<v;i++)
+{
+System.out.print("Neighbors of "+i+" are : ");
+}
+for(Integer x:arr[i])
+{
+System.out.println(x + "");
+}
+System.out.println();
+}
+}
+void BFS(int s)
+{
+System.out.println("--------BFS--------");
+Queue<Integer> q = new LinkedList<>();
+boolean visited[] = new boolean[v];
+q.add(s);
+visited[s] = true;
+while(id.isEmpty())
+{
+int temp = q.poll();
+System.out.print(temp+" ");
+for(Integer x:arr[temp])
+{
+if(!visited[x])
+{
+q.add(x);
+visited{x} = true;
+}
+}
+}
+System.out.println();
+}
+void DFS(int s)
+{
+System.out.println("--------BFS--------");
+boolean visited[] = new boolean[v];
+DFSUtil(s, visted);
+System.out.println();
+}
+void DFSUtil(int s, boolean visted[])
+{
+System.out.println(s + " ");
+visited[s] = true;
+for(Integer x:arr[s])
+{
+if(!visted[x])
+{
+DFS(x);
+}
+}
+}
+}
+void DFSOverall()
+{
+System.out.println("--------DFS Overall--------");
+boolean visited[] = new boolean[v];
+int count = 0;
+for(int i=0;i<v;i++)
+{
+if(!visited[i])
+{
+DFSUtil(i, visited);
+System.out.println();
+count++;
+}
+}
+public class GraphLL {
+public static void main(String[] args){
+Graph g = new Graph(5);
+g.addEdge(0, 1);
+g.addEdge(0, 1);
+g.addEdge(0, 2);
+g.addEdge(0, 3);
+g.addEdge(1, 3);
+g.addEdge(2, 4);
+g.addEdge(3, 4);
+g.print();
+g.BFS(0);
+g.BFS(1);
+g.BFS(2);
+g.BFS(3);
+g.BFS(4);
+
+g.DFS(0);
+g.DFSOverall();
+
+}
+}
+
+
+
+package graphs;
+import java.util.*;
+class GraphImp
+{
+HashMap<Integer, HashSet<Integer>> graph = new HashMap();
+void addVertex(int data)
+{
+graph.put(data, new HashSet<>());
+}
+void addEdge(int start, int end)
+{
+graph.get(start).add(end);
+}
+void print()
+{
+System.out.println("Vertices are : " +graph.KeySet());
+for(int i=0;i<v;i++)
+{
+System.out.print("Neighbour of "+x+" are: ");
+System.out.println(grap.get(x));
+}
+}}
+public class GraphSM{
+public static void main(String[] args){
+g.addEdge(0, 1);
+g.addEdge(0, 1);
+g.addEdge(0, 2);
+g.addEdge(0, 3);
+g.addEdge(1, 3);
+g.addEdge(2, 4);
+g.addEdge(3, 4);
+g.print();
+}
+}
