@@ -1,0 +1,9 @@
+Lecture57- Graphs
+connected Graph: A graph is connected if a path exists from every vertex to every other vertex.
+Disconnected Graph: A graph is disconnected if there exist at least two nodes such that there is no path connecting them.
+Neighbours: if two nodes are adjacent to each other and connected by an edge, then those nodes are called neighbours.
+Degree: The number of edges that are connected to a node is called degree of the node
+properties of graphs
+in case of directed graphs, the degree can be classifed into:
+in-degree: the number of incoming edges to a node.
+out-degree: the number of outgoing edges from a node.
