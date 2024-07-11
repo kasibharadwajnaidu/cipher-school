@@ -1,0 +1,35 @@
+Lecture59- Implementation Of Graphs
+package graphs;
+import java.util.*;
+class GraphImp
+{
+HashMap<Integer, HashSet<Integer>> graph = new HashMap();
+void addVertex(int data)
+{
+graph.put(data, new HashSet<>());
+}
+void addEdge(int start, int end)
+{
+graph.get(start).add(end);
+}
+void print()
+{
+System.out.println("Vertices are : " +graph.KeySet());
+for(int i=0;i<v;i++)
+{
+System.out.print("Neighbour of "+x+" are: ");
+System.out.println(grap.get(x));
+}
+}}
+public class GraphSM{
+public static void main(String[] args){
+g.addEdge(0, 1);
+g.addEdge(0, 1);
+g.addEdge(0, 2);
+g.addEdge(0, 3);
+g.addEdge(1, 3);
+g.addEdge(2, 4);
+g.addEdge(3, 4);
+g.print();
+}
+}
