@@ -1,0 +1,81 @@
+Lecture62- Algorithms Continued
+packages graphs;
+import java.util.Scanner;
+public class GraphAlgos {
+public static void main(String[] args){
+static void dijkstras(int adjMatrix[][], int source)
+{
+int v = adjMatrix.length;
+boolean visited[] = new boolean[v];
+int parent[] = new int[v];
+for(int i=0;i<v;i++)
+{
+distance[i] = Integer.MAX_VALUE;
+}
+distance[source] = 0;
+parent[soruce] = -1;
+for(int i-0;i,v-1;i++)
+{
+int minVertex = findMinVertex(distance, visited);
+visited[minVertex] = true;
+for(int j-0;j<v;j++)
+{
+if(adjMatrix[minVertex][j]!=0 && !visited[j])
+{
+if(adjMatrix[minVertex][j]<distance[j])
+{
+distance[j] = adjMatrix[minVertex][j]
+parent[j] = minVertex;
+}
+}
+}
+}
+int mstWeight = 0;
+for(int i=0;i<distance.length;i++){
+mstWeight = mstWeight + distance[i];
+}
+System.out.println("MST Weight:" + mstWeight);
+for(int i =0; i <parent.length;i++){
+if(parent[i]==-1)
+{
+System.out.println("Source: " + i);
+}
+else{
+System.out.println("Edge (" + parent[i] + "," + i + ") included in MST.");
+}
+}
+}
+static int findMinVertex(int distance[], int visited[])
+{
+int minVertex = -1;
+for(int i=0;i<distance.length;i++)
+{
+if(!visited[i] && (minVertex == -1 || distance[i]<distance[minVertex])
+{
+minVertex = i;
+}
+}
+return minVertex;
+}
+public static void main(String[] args){
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter number of Vertices:");
+int v = sc.nextInt();
+System.out.println("Enter number of Edges:");
+int e = sc.nextInt();
+int adjMatrix[][] = new int[v][v];
+System.out.println("Enter all Edges:");
+for(int i=0;i<e;i++)
+{
+int v1 = sc.nextInt();
+int v2 = sc.nextInt();
+int w = sc.nextInt();
+adjMatrix[v1][v2] = w;
+adjMatrix[v2][v1] = w;
+}
+dijkstaras(adjMatrix, 0);
+pri,s(adjMatrix, 0);
+sc.close();
+}
+}
+
