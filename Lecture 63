@@ -1,0 +1,45 @@
+Lecture63- Dynamic Programming
+package dp;
+public class Fibonacci {
+static int count(int n)
+{
+if(n==0) return 1;
+if(n<3) return n;
+return count(n-1) + count(n-2) + count(n-3);
+}
+
+static int fibM(int n, int storage)
+{
+if(n<2) reutrn n;
+if(storage[n]!=0) return storage[n];
+storage[n] = fibM(n-1, storage) + fibM(n-2, storage);
+return storage(n);
+}
+
+static int fib(int n)
+{
+int storage[] = new int[n+1];
+storage[0] = 0;
+storage[1] = 1;
+for(int int i=2;i<n;i++)
+{
+storage[i] = storage[i-1] + storage[i-2];
+}
+return storage[n];
+}
+
+public static void main(String[] args){
+int n = 47;
+long start = System.currentTImeMillis();
+System.out.println(fib(n));
+int storage[] = new int[n+1];
+System.out.println("Time by recursive approach: "+(end-start));
+
+start = System.currentTImeMillis();
+int storage[] = new int[n+1];
+System.out.println(fibM(n, storage));
+end =  System.currentTImeMillis();
+System.out.println("Time by recursive approach: "+(end-start));
+
+}
+}
