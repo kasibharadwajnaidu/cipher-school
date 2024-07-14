@@ -1,0 +1,10 @@
+Lecture66- Boggle Game
+the boggle game is to form as many 3+ letter words as possible from a 2-dimensional board of letters
+we want to form words by starting at any letter and travelling over adjacent cubes verticcally, orzintallyor diagonally
+given a dict, we have to use it
+so we have to import it somehow and store it
+Borad -> can be user entered or randomly generated 
+traversing the array
+check of that word is valid -that is itis there  in our dictionary
+check if a word is already found before
+ifValid,store
