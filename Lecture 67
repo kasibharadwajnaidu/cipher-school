@@ -1,0 +1,6 @@
+Lecture67- Boggle Game Continued
+
+Every node of trie consists of mutliple branches.Each branch represents 26 branches.
+we can store dictionary in trie.
+Each branch represents a possible character of keys.
+we need to mark the last node of every key as end of word nodes.
